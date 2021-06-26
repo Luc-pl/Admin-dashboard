@@ -3,34 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Pattaya&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Admin-dashboard</title>
 </head>
 <body>
-  <div class="container">
-    <div class="sidebar">
-      <div class="logo">
-        <ul>
-          <li>Just do it</li>
-          <li><a href="#">Just do it<i class="fas fa-bars"></i></a></li>
-        </ul>
-      </div>
-      <div class="main-menu">
-        <div class="menu">
-          <ul>
-            <li><a href="#"><img src="images/general.svg" alt="general-icon">General</a></li>
-            <li><a href="#"><img src="images/details.svg" alt="details-icon">Details</a></li>
-            <li><a href="#"><img src="images/links.svg" alt="links-icon">Links</a></li>
-            <li><a href="#"><img src="images/banners.svg" alt="banners-icon">Banners</a></li>
-            <li><a href="#"><img src="images/banners.svg" alt="personal-icon">Personal data</a></li>
-            <li><a href="#"><img src="images/payout.svg" alt="payout-icon">Payout</a></li>
-            <li><a href="#"><img src="images/postback.svg" alt="postback-icon">Postback</a></li>
-          </ul>
+  <!--Sidebar-->
+  <div class="layout">
+    <section class="menu">
+      <aside class="sidebar">
+        <div class="logo">
+          <h1>Just do it</h1>
+          <div class="burger">
+            <a href="#"><i class="fas fa-bars"></i></a>
+          </div>
         </div>
-      </div>
-    </div>
+        <nav class="sidebar-nav">
+          <ul class="sidebar-links">
+            <li class="nav-list">
+              <a class="nav-link active" href="#general"><img src="images/icons/general.svg" class="icon-general icon" alt="">General</a>
+            </li>
+            <li class="nav-list">
+              <a class="nav-link" href="#details"><img src="images/icons/details.svg" class="icon-details icon" alt="">Details</a>
+            </li>
+            <li class="nav-list">
+              <a class="nav-link" href="#links"><img src="images/icons/links.svg" class="icon-links icon" alt="">Links</a>
+            </li>
+            <li class="nav-list">
+              <a class="nav-link" href="#banners"><img src="images/icons/banners.svg" class="icon-banners icon" alt="">Banners</a>
+            </li>
+            <li class="nav-list">
+              <a class="nav-link" href="#personaldata"><img src="images/icons/personaldata.svg" class="icon-personaldata icon" alt="">Personal data</a>
+            </li>
+            <li class="nav-list">
+              <a class="nav-link" href="#payout"><img src="images/icons/payout.svg" class="icon-payout icon" alt="">Payout</a>
+            </li>
+            <li class="nav-list">
+              <a class="nav-link" href="#postback"><img src="images/icons/postback.svg" class="icon-postback icon" alt="">Postback</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </section>
   </div>
 </body>
 </html>

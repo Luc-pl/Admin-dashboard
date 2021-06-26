@@ -1,0 +1,119 @@
+.menu {
+    background-color: $paragraph-color;
+    width: 200px;
+    display: block;
+}
+
+aside {
+    background-color: $paragraph-color;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 190px;
+    color: white;
+
+    .logo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            font-family: $brand-font;
+            letter-spacing: 2px;
+            font-size: 30px;
+            margin: 10px 0;
+            padding-left: 15px;
+        }
+    }
+}
+
+.burger {
+    font-size: 20px;
+    padding-right: 15px;    
+    margin-top: 7px;   
+
+    a {
+        color: rgb(175, 175, 175);
+    }
+
+    a:hover {
+        color: white;
+    }
+}
+
+.sidebar-links {
+
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    width: 190px;
+
+    li {
+        position: relative;
+        margin-left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 40px;
+        color: rgb(182, 182, 182);
+
+        img {
+            filter: invert(95%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(100%) contrast(100%);
+        }
+  
+  
+        &:hover {
+          background-color: rgb(40,40,40);
+  
+          a {
+            color: #ffffff;
+          }
+  
+          img {
+            filter: invert(95%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(100%) contrast(100%);
+          }
+  
+          &::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 4px;
+            background-color: $brand-main-color;
+            z-index: 11;
+          }
+        }
+    }
+  
+      .icon {
+        color: white;
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+        margin-left: 30px;
+        filter: invert(55%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(92%) contrast(82%);
+      }
+  
+      a {
+        display: flex;
+        align-content: center;
+        height: 100%;
+        width: 100%;
+        padding-left: 0;
+        text-decoration: none;
+        color: rgb(175, 175, 175);
+        font-size: 15px;
+        font-family: $paragraph-font;
+        padding-top: 17px;
+      }
+}
+
