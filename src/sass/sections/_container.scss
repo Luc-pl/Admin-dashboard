@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  min-width: 85%;
+  min-height: 98%;
+  box-sizing: content-box;
+  background-color: white;
+  margin: 70px 20px 20px 210px;
+  box-shadow: $box-shadow;
+  border-radius: 3px;
+  flex-direction: column;
+  font-family: $paragraph-font;
+  color: $background-color;
+}
