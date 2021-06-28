@@ -1,0 +1,11 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+  
+body {
+  background-color: rgb(228, 228, 228);
+  overflow: hidden;
+  margin: 0;
+  max-width: 100vw;
+  overflow-y: scroll;
+}
