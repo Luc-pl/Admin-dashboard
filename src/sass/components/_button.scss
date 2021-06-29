@@ -1,18 +1,18 @@
 .btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $background-color-2;
-    color: white;
-    border-radius: 3px;
-    padding: 0 10px;
-    min-height: 40px;
-    min-width: 40px;
-    text-decoration: none;
-    margin-left: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $background-color-2;
+  color: white;
+  border-radius: 3px;
+  padding: 0 10px;
+  min-height: 40px;
+  min-width: 40px;
+  text-decoration: none;
+  margin-left: 10px;
   
-    &:hover {
-      cursor: pointer;
-      opacity: 0.85;
-    }
+  &:hover {
+    cursor: pointer;
+    opacity: 0.85;
+  }
 }
