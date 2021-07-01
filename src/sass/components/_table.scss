@@ -1,0 +1,14 @@
+table {
+  font-family: $paragraph-font;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+
+  td, th {
+    border-bottom: 1px solid $background-color;
+    text-align: left;
+    padding: 10px 70px;
+  }
+}
+  
