@@ -4,11 +4,28 @@ table {
   display: flex;
   justify-content: center;
   padding-bottom: 50px;
+  cursor: pointer;
 
-  td, th {
-    border-bottom: 1px solid $background-color;
+  th {
+    border-bottom: 1.5px solid $background-color;
     text-align: left;
-    padding: 10px 70px;
+    padding: 20px 100px;
+
+    &:hover {
+      border: 1.5px solid;
+      border-radius: 3px;
+      background-color: $background-color-3;
+      height: 50%;
+      color: $paragraph-color;
+
+    }
+  }
+
+  td {
+    border-bottom: 1.5px solid $background-color;
+    text-align: left;
+    padding: 20px 100px;
+    color: $paragraph-color;
   }
 }
   
