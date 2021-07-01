@@ -15,7 +15,6 @@ table {
       border: 1.5px solid;
       border-radius: 3px;
       background-color: $background-color-3;
-      height: 50%;
       color: $paragraph-color;
 
     }
@@ -26,6 +25,10 @@ table {
     text-align: left;
     padding: 20px 100px;
     color: $paragraph-color;
+  }
+
+  tr:hover {
+    background-color: $background-color-3;
   }
 }
   
