@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="vendor/icons/icon-font/css/Glyphter.css">
@@ -11,8 +11,8 @@
 </head>
 <body>
 
-  <!--Modale-->
-  <div class="overlay-container" id="overlay-modale">
+  <!--Modals-->
+  <div class="overlay-container" id="overlay-modals">
     
     <div id="quit" class="modal">
       <div class="title-modal">
@@ -46,7 +46,7 @@
     <section class="menu">
       <aside class="sidebar">
         <div class="logo">
-          <h1>Just do it</h1>
+          <a href="#general"><img src="images/just-logo.png" class="logo" alt=""></a>
           <div class="burger">
             <a href="#menu"><i class="fas fa-bars"></i></a>
           </div>
@@ -141,11 +141,15 @@
           <h2>General statistic</h2>
         </div>
         <div class="form-body">
-          <form class="form">  
-            <input class="form-field" type="date" value="2016-05-16">
-            <input class="form-field" type="date" value="2016-05-16">
+          <form class="form">
+            <div class="form-frame">
+              <input class="form-field" type="date" value="2016-05-16">
+              <input class="form-field" type="date" value="2016-05-16">
+            </div>  
+              <div class="btn-form">
+                <a href="#refresh" class="icon-refresh btn btn-refresh"></a>
+              </div>            
           </form>
-          <a href="#refresh" class="icon-refresh btn btn-refresh"></a>
         </div>
         <div class="table-wrapper">
           <div class="table-row-wrapper">
@@ -343,102 +347,111 @@
         </div>
         <div class="form-body">
           <form class="form">
-            <input class="form-field" type="date" value="2016-05-16">
-            <input class="form-field" type="date" value="2016-05-16">
+            <div class="form-frame">
+              <input class="form-field" type="date" value="2016-05-16">
+              <input class="form-field" type="date" value="2016-05-16">
+            </div>  
+              <div class="btn-form">
+                <a href="#refresh" class="icon-refresh btn btn-refresh"></a>
+              </div>            
           </form>
-          <a href="#refresh" class="icon-refresh btn btn-refresh"></a>
         </div>
         <table>
-          <tr>
-            <th>Date</th>
-            <th>Amount($)</th>
-            <th>Deal</th>
-            <th>Account</th>
-          </tr>
-          <tr>
-            <td>17/08/02 (12:58)</td>
-            <td>34,425.00</td>
-            <td>cpl (200)</td>
-            <td>bank</td>
-          </tr>
-          <tr>
-            <td>15/08/02 (12:58)</td>
-            <td>29,436.00</td>
-            <td>cpl (200)</td>
-            <td>bank</td>
-          </tr>
-          <tr>
-            <td>17/08/02 (12:58)</td>
-            <td>34,425.00</td>
-            <td>cpl (200)</td>
-            <td>bank</td>
-          </tr>
-          <tr>
-            <td>15/08/02 (12:58)</td>
-            <td>29,436.00</td>
-            <td>cpl (200)</td>
-            <td>bank</td>
-          </tr>
-          <tr>
-            <td>17/08/02 (12:58)</td>
-            <td>34,425.00</td>
-            <td>cpl (200)</td>
-            <td>bank</td>
-          </tr>
-          <tr>
-            <td>15/08/02 (12:58)</td>
-            <td>29,436.00</td>
-            <td>cpl (200)</td>
-            <td>bank</td>
-          </tr>
-          <tr>
-            <td>17/08/02 (12:58)</td>
-            <td>34,425.00</td>
-            <td>cpl (200)</td>
-            <td>bank</td>
-          </tr>
-          <tr>
-            <td>15/08/02 (12:58)</td>
-            <td>29,436.00</td>
-            <td>cpl (200)</td>
-            <td>bank</td>
-          </tr>
-          <tr>
-            <td>17/08/02 (12:58)</td>
-            <td>34,425.00</td>
-            <td>cpl (200)</td>
-            <td>bank</td>
-          </tr>
-          <tr>
-            <td>15/08/02 (12:58)</td>
-            <td>29,436.00</td>
-            <td>cpl (200)</td>
-            <td>bank</td>
-          </tr>
-          <tr>
-            <td>17/08/02 (12:58)</td>
-            <td>34,425.00</td>
-            <td>cpl (200)</td>
-            <td>bank</td>
-          </tr>
-          <tr>
-            <td>15/08/02 (12:58)</td>
-            <td>29,436.00</td>
-            <td>cpl (200)</td>
-            <td>bank</td>
-          </tr>
-          <tr>
-            <td>17/08/02 (12:58)</td>
-            <td>34,425.00</td>
-            <td>cpl (200)</td>
-            <td>bank</td>
-          </tr>
-          <tr>
-            <td>15/08/02 (12:58)</td>
-            <td>29,436.00</td>
-            <td>cpl (200)</td>
-            <td>bank</td>
-          </tr>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Amount($)</th>
+              <th>Deal</th>
+              <th>Account</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>17/08/02 (12:58)</td>
+              <td>34,425.00</td>
+              <td>cpl (200)</td>
+              <td>bank</td>
+            </tr>
+            <tr>
+              <td>15/08/02 (12:58)</td>
+              <td>29,436.00</td>
+              <td>cpl (200)</td>
+              <td>bank</td>
+            </tr>
+            <tr>
+              <td>17/08/02 (12:58)</td>
+              <td>34,425.00</td>
+              <td>cpl (200)</td>
+              <td>bank</td>
+            </tr>
+            <tr>
+              <td>15/08/02 (12:58)</td>
+              <td>29,436.00</td>
+              <td>cpl (200)</td>
+              <td>bank</td>
+            </tr>
+            <tr>
+              <td>17/08/02 (12:58)</td>
+              <td>34,425.00</td>
+              <td>cpl (200)</td>
+              <td>bank</td>
+            </tr>
+            <tr>
+              <td>15/08/02 (12:58)</td>
+              <td>29,436.00</td>
+              <td>cpl (200)</td>
+              <td>bank</td>
+            </tr>
+            <tr>
+              <td>17/08/02 (12:58)</td>
+              <td>34,425.00</td>
+              <td>cpl (200)</td>
+              <td>bank</td>
+            </tr>
+            <tr>
+              <td>15/08/02 (12:58)</td>
+              <td>29,436.00</td>
+              <td>cpl (200)</td>
+              <td>bank</td>
+            </tr>
+            <tr>
+              <td>17/08/02 (12:58)</td>
+              <td>34,425.00</td>
+              <td>cpl (200)</td>
+              <td>bank</td>
+            </tr>
+            <tr>
+              <td>15/08/02 (12:58)</td>
+              <td>29,436.00</td>
+              <td>cpl (200)</td>
+              <td>bank</td>
+            </tr>
+            <tr>
+              <td>17/08/02 (12:58)</td>
+              <td>34,425.00</td>
+              <td>cpl (200)</td>
+              <td>bank</td>
+            </tr>
+            <tr>
+              <td>15/08/02 (12:58)</td>
+              <td>29,436.00</td>
+              <td>cpl (200)</td>
+              <td>bank</td>
+            </tr>
+            <tr>
+              <td>17/08/02 (12:58)</td>
+              <td>34,425.00</td>
+              <td>cpl (200)</td>
+              <td>bank</td>
+            </tr>
+            <tr>
+              <td>15/08/02 (12:58)</td>
+              <td>29,436.00</td>
+              <td>cpl (200)</td>
+              <td>bank</td>
+            </tr>
+          </tbody>          
+          
         </table>
       </div>
     </div>
@@ -449,7 +462,7 @@
           <h2>Personal data</h2>
         </div>
         <div class="personal-wrapper">
-          <form class="personal-form">
+          <form action="" method="POST" class="personal-form">
             <div class="form-example">
               <label for="name">Name</label>
               <input type="text" name="name" id="name" required>
@@ -495,17 +508,17 @@
         <div class="password-wrapper">
           <form class="personal-form">  
             <div class="form-example">
-              <label for="name">Password</label>
+              <label for="password">Password</label>
               <input type="text" name="password" id="password" required>
             </div>
             <div class="form-example">
               <label for="name">Repeat</label>
               <input type="text" name="repeat" id="repeat" required>
             </div>
+            <div class="button-wrapper">
+              <a href="#save" class="btn btn-save">Save</a>
+            </div>
           </form>
-        </div>
-        <div class="button-wrapper">
-          <a href="#save" class="btn btn-save">Save</a>
         </div>
       </div>
     </div>
