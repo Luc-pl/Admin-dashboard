@@ -12,19 +12,21 @@
 <body>
 
   <!--Modals-->
-  <div class="overlay-container" id="overlay-modals">
+  <div class="overlay" id="overlay">
     
-    <div id="quit" class="modal">
+    <div id="modal-quit" class="modal">
+      <div class="btn-close js--close-modal">x</div>
       <div class="title-modal">
         <h3>Do you really want to Quit?</h3>
       </div>
-      <div class="login-wrapper">
-        <a href="#" class="btn btn-cancel">Cancel</a>
-        <a href="#" class="btn">Quit</a>
+      <div class="modal-body">
+        <a href="#" class="btn btn-cancel js--close-modal">Cancel</a>
+        <a href="#" class="btn js--close-modal">Quit</a>
       </div>
     </div>
 
     <div id="login" class="modal">
+      <div class="btn-close js--close-modal">x</div>
       <div id="title-modal">
         <h3>Login</h3>
       </div>
@@ -32,7 +34,7 @@
         <form action="" method="POST">
           <input type="text" name="user-name" placeholder="login name">
           <input type="text" name="password" placeholder="password">
-          <a href="#" class="btn">Enter</a>
+          <a href="#" class="btn js--close-modal">Enter</a>
         </form>
       </div>
     </div>
@@ -88,10 +90,10 @@
                   <a href="#" class="nav-item nav-link"><img src="images/icons/notification.svg" class="icon-notification icon-top" alt="">Notifications</a>
                 </li>
                 <li class="top-link">
-                  <a href="#" class="nav-item nav-link"><img src="images/icons/profile.svg" class="icon-profile icon-top" alt="">Leonardo Dicaprio</a>
+                  <a href="#login" class="nav-item nav-link"><img src="images/icons/profile.svg" class="icon-profile icon-top" alt="">Leonardo Dicaprio</a>
                 </li>
                 <li class="top-link">
-                  <a href="#" class="nav-item nav-link"><img src="images/icons/quit.svg" class="icon-quit" alt="">Log out</a>
+                  <a href="#quit" class="nav-item nav-link"><img src="images/icons/quit.svg" class="icon-quit" alt="">Log out</a>
                 </li>
               </ul>
             </div>
@@ -274,7 +276,7 @@
       </div>
     </div>
 
-    <div id="banners" class=" links page">
+    <div id="banners" class="links page">
       <div class="container">
         <div class="page-title">
           <h2>Banners</h2>
@@ -524,5 +526,7 @@
     </div>
   
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
