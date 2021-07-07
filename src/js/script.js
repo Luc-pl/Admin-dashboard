@@ -32,7 +32,11 @@ function openModal(modal) {
   document.querySelector(modal).classList.add('show');
 }
 
-document.querySelector('[href*="#quit"]').addEventListener('click', function () {
+document.querySelector('.top-bar-login').addEventListener('click', function () {
+  openModal('#modal-login');
+});
+
+document.querySelector('.top-bar-logout').addEventListener('click', function () {
   openModal('#modal-quit');
 });
 

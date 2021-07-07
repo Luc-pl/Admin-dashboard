@@ -14,7 +14,7 @@
   <!--Modals-->
   <div class="overlay" id="overlay">
     
-    <div id="modal-quit" class="modal">
+    <div id="modal-quit" class="modal modal-quit">
       <div class="btn-close js--close-modal">x</div>
       <div class="title-modal">
         <h3>Do you really want to Quit?</h3>
@@ -25,7 +25,7 @@
       </div>
     </div>
 
-    <div id="login" class="modal">
+    <div id="modal-login" class="modal modal-login">
       <div class="btn-close js--close-modal">x</div>
       <div id="title-modal">
         <h3>Login</h3>
@@ -90,10 +90,10 @@
                   <a href="#" class="nav-item nav-link"><img src="images/icons/notification.svg" class="icon-notification icon-top" alt="">Notifications</a>
                 </li>
                 <li class="top-link">
-                  <a href="#login" class="nav-item nav-link"><img src="images/icons/profile.svg" class="icon-profile icon-top" alt="">Leonardo Dicaprio</a>
+                  <a href="#" class="nav-item nav-link"><img src="images/icons/profile.svg" class="icon-profile icon-top" alt="">Leonardo Dicaprio</a>
                 </li>
                 <li class="top-link">
-                  <a href="#quit" class="nav-item nav-link"><img src="images/icons/quit.svg" class="icon-quit" alt="">Log out</a>
+                  <a href="#" class="nav-item nav-link"><img src="images/icons/quit.svg" class="icon-quit" alt="">Log out</a>
                 </li>
               </ul>
             </div>
@@ -125,12 +125,12 @@
           <li class="first-link">
             <a href="#notification" class="icon-notification icon-top"></a>
           </li>
-          <li class="first-link">
-            <a href="#login" class="icon-profile icon-top"></a>
+          <li class="first-link top-bar-login">
+            <i class="icon-profile icon-top"></i>
             <div class="name-profile">Leonardo Dicaprio</div>
           </li>
-          <li class="first-link">
-            <a href="#quit" class="icon-quit icon-top"></a>
+          <li class="first-link top-bar-logout">
+            <i class="icon-quit icon-top"></i>
           </li>
         </ul>
       </div>
