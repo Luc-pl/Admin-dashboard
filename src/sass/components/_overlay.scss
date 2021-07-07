@@ -20,12 +20,12 @@
 
 
 .modal {
-  max-width: 600px;
-  max-height: 150px;
+  width: 80%;
   margin: auto;
   background-color: #ffffff;
   position: relative;
   padding: 30px;
+  display: none;
 }
 
 .modal.show {
@@ -43,4 +43,10 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+
+@media(max-width: 768px) {
+  .overlay {
+    display: block;
+  }
 }

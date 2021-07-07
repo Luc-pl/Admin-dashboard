@@ -60,3 +60,28 @@
   }
 
 }
+
+@media (max-width: 768px){
+  .form-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 35px;
+
+    .form-field{
+      height: 30px;
+      width: 50%;
+      margin-left: 50px;
+
+      &:first-of-type {
+        margin-bottom: 5px;
+        border-right: 1.5px solid $background-color;
+      }
+
+      &:last-of-type {
+        border-left: 1.5px solid $background-color;
+      }
+    }
+  }
+}
