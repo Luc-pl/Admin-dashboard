@@ -40,6 +40,10 @@ document.querySelector('.top-bar-logout').addEventListener('click', function () 
   openModal('#modal-quit');
 });
 
+document.querySelector('.top-bar-chat').addEventListener('click', function () {
+  openModal('#modal-chat');
+});
+
 
 
 

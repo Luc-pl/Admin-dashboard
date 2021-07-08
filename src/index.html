@@ -15,7 +15,6 @@
   <div class="overlay" id="overlay">
     
     <div id="modal-quit" class="modal modal-quit">
-      <div class="btn-close js--close-modal">x</div>
       <div class="title-modal">
         <h3>Do you really want to Quit?</h3>
       </div>
@@ -26,18 +25,43 @@
     </div>
 
     <div id="modal-login" class="modal modal-login">
-      <div class="btn-close js--close-modal">x</div>
-      <div id="title-modal">
+      <div class="title-modal">
         <h3>Login</h3>
       </div>
       <div class="login-wrapper">
         <form action="" method="POST">
-          <input type="text" name="user-name" placeholder="login name">
+          <input type="text" name="user-name" class="icon-login" placeholder="login name">
           <input type="text" name="password" placeholder="password">
-          <a href="#" class="btn js--close-modal">Enter</a>
+          <a href="#" class="btn-enter js--close-modal">Enter</a>
         </form>
       </div>
     </div>
+
+    <div id="modal-chat" class="modal modal-chat">
+      <div class="btn-close js--close-modal">x</div>
+      <div class="chat-title-modal">
+        <h3>Online chat with your personal manager</h3>
+      </div>
+      <div class="chat-person-wrapper">
+        <div class="chat-person-image">
+          <img src="images/pexels-pixabay-220453.jpg" alt="">
+        </div>
+        <div class="chat-name">
+          <h4>Mikhael E.</h4>
+          <p class="btn btn-online">online</p>
+        </div>
+      </div>
+      <div id="chat-box" class="messages">
+        <div class="message-answer">
+          Hello. Can I help you?
+        </div>
+      </div>
+      <div class="answer-box">
+        <input class="form-field chat-input" type="text" placeholder="Enter the message..">
+        <a href="#" class="btn btn-input">Send</a>
+      </div>
+    </div>
+  </div>
   
   </div>
 
@@ -103,7 +127,7 @@
           <div class="manager-title">
             <h1>Your Manager</h1>
           </div>
-          <div class="manager-profile">
+          <div class="manager-profile top-bar-chat">
             <div class="manager-image">
               <img src="images/pexels-pixabay-220453.jpg" alt="">
             </div>

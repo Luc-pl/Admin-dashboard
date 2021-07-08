@@ -27,12 +27,12 @@
 
 
 .modal {
-  width: 30%;
-  height: 30%;
+  width: 40%;
+  height: 60%;
   margin: auto;
   background-color: #ffffff;
   position: relative;
-  padding: 30px;
+  padding: 10px;
   justify-content: center;
   align-items: center;
   display: none;
@@ -49,10 +49,88 @@
   padding: 5px 10px;
 }
 
-.login-wrapper {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+.modal-login {
+  width: 40%;
+  height: 17%;
+  margin: auto;
+  background-color: #ffffff;
+
+  .title-modal {
+    border-bottom: 1.5px solid $background-color;
+  }
+  
+
+  h3 {
+    margin: 10px 0 10px 10px;
+    font-family: $paragraph-font;
+    color: $background-color;
+    text-transform: uppercase;
+  }
+
+  .login-wrapper {
+    margin: 10px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $paragraph-font;
+
+    .btn-enter {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $background-color-2;
+      color: white;
+      border-radius: 3px;
+      padding: 0 10px;
+      min-height: 35px;
+      min-width: 100px;
+      text-decoration: none;
+      margin-left: 10px;
+      
+      &:hover {
+        cursor: pointer;
+        opacity: 0.85;
+      }
+    }
+  }
+}
+
+.modal-quit {
+  width: 30%;
+  height: 20%;
+  margin: auto;
+  background-color: #ffffff;
+  font-family: $paragraph-font;
+
+  .title-modal {
+    border-bottom: 1.5px solid $background-color;
+  }
+
+  h3 {
+    margin: 10px 0 20px 10px;
+    color: $background-color;    
+  }
+
+  .modal-body{
+    margin-top: 10px;
+    margin-left: 60%;
+
+    .btn-cancel {
+      background-color: $background-color;
+      color: white;
+      border-radius: 3px;
+      padding: 0 10px;
+      min-height: 40px;
+      min-width: 50px;
+      text-decoration: none;
+      margin-left: 10px;
+      
+      &:hover {
+        cursor: pointer;
+        opacity: 0.85;
+      }
+    }
+  }
 }
 
 @media(max-width: 768px) {
