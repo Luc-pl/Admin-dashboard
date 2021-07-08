@@ -25,6 +25,10 @@
   display: none;
 }
 
+.overlay-nav {
+  z-index: 10;
+}
+
 
 .modal {
   width: 40%;
@@ -135,6 +139,10 @@
 
 @media(max-width: 768px) {
   .overlay {
+    display: block;
+  }
+
+  .overlay-active {
     display: block;
   }
 }
