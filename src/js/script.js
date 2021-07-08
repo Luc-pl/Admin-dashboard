@@ -1,5 +1,19 @@
 /* eslint-disable no-unused-vars */
 
+/* Sidemenu */
+function toggleMenu() {
+  const navButton = document.querySelector('.hamburger');
+  const sidenav = document.querySelector('.menu');
+  const overlay = document.querySelector('.overlay-nav');
+
+  navButton.addEventListener('click', function(e){
+    e.preventDefault();
+
+    sidenav.classList.toggle('nav-active');
+    overlay.classList.toggle('overlay-active');
+  });
+}
+
 /* Modals */
 function closeModal() {
   document.getElementById('overlay').classList.remove('show');

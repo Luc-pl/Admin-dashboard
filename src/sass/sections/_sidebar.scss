@@ -256,7 +256,7 @@ aside {
   .menu {
     display: block;
     width: 48px;
-    overflow-y: scroll;
+    overflow: scroll;
   }
 
   aside{
@@ -266,7 +266,7 @@ aside {
     transform: translateX(-142px);
 
     .rwd-top-bar {
-      opacity: 0;
+      opacity: 1;
     }
 
     .contact {
@@ -275,7 +275,7 @@ aside {
     }
 
     .sidebar-links li {
-      opacity: 0;
+      opacity: 1;
     }
 
     .burger {
@@ -284,11 +284,10 @@ aside {
   }
 
   .nav-active {
-    aside{
+    aside {
       transform: translateX(0%);
       display: block;
       background-color: $background-color;
-      background: $background-color;
 
       .rwd-top-bar{
         opacity: 1;
