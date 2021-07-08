@@ -9,10 +9,14 @@
     justify-content: space-between;
     align-items: center;
     padding-bottom: 4px;
+    border-bottom: 1.5px solid $background-color;
   
     h3 {
-      font-weight: 700;
-      font-size: 13px;
+      margin: 10px 0 10px 10px;
+      font-family: $paragraph-font;
+      font-size: 14px;
+      color: $background-color;
+      text-transform: uppercase;
     }
   }
   
