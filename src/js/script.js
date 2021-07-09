@@ -2,7 +2,7 @@
 
 /* Sidemenu */
 function toggleMenu() {
-  const navButton = document.querySelector('.hamburger');
+  const navButton = document.querySelector('.burger');
   const sidenav = document.querySelector('.menu');
   const overlay = document.querySelector('.overlay-nav');
 
@@ -13,6 +13,7 @@ function toggleMenu() {
     overlay.classList.toggle('overlay-active');
   });
 }
+toggleMenu();
 
 /* Modals */
 function closeModal() {
@@ -32,12 +33,6 @@ document.querySelector('#overlay').addEventListener('click', function (e) {
   }
 });
 
-document.addEventListener('keyup', function (e) {
-  if (e.keyCode === 27) {
-    closeModal();
-  }
-});
-
 function openModal(modal) {
   document.querySelectorAll('#overlay > *').forEach(function (modal) {
     modal.classList.remove('show');
@@ -46,7 +41,13 @@ function openModal(modal) {
   document.querySelector(modal).classList.add('show');
 }
 
-document.querySelector('.top-bar-login').addEventListener('click', function () {
+document.querySelectorAll('[data-target]').forEach(item => {
+  item.addEventListener('click', function() {
+    openModal(item.getAttribute('data-target'));
+  });
+});
+
+/* document.querySelector('.top-bar-login').addEventListener('click', function () {
   openModal('#modal-login');
 });
 
@@ -57,6 +58,7 @@ document.querySelector('.top-bar-logout').addEventListener('click', function () 
 document.querySelector('.top-bar-chat').addEventListener('click', function () {
   openModal('#modal-chat');
 });
+*/
 
 
 

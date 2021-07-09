@@ -255,8 +255,8 @@ aside {
 @media (max-width: 768px) {
   .menu {
     display: block;
-    width: 48px;
-    overflow: scroll;
+    width: 40px;
+    overflow-y: scroll;
   }
 
   aside{
@@ -280,6 +280,7 @@ aside {
 
     .burger {
       display: block;
+      margin-right: 7px;
     }
   }
 
@@ -287,7 +288,8 @@ aside {
     aside {
       transform: translateX(0%);
       display: block;
-      background-color: $background-color;
+      background-color: $paragraph-color;
+      color: white;
 
       .rwd-top-bar{
         opacity: 1;
