@@ -17,7 +17,7 @@ toggleMenu();
 
 /* Modals */
 function closeModal() {
-  document.getElementById('overlay').classList.remove('show');
+  document.getElementById('overlay').classList.remove('show'); /*dlaczego sugerowany querySelector nie powoduje zamknięcia?*/
 }
 
 document.querySelectorAll('#overlay .js--close-modal').forEach(function (btn) {
@@ -34,9 +34,11 @@ document.querySelector('#overlay').addEventListener('click', function (e) {
 });
 
 function openModal(modal) {
-  document.querySelectorAll('#overlay > *').forEach(function (modal) {
-    modal.classList.remove('show');
-  });
+  const activeModal = document.querySelector('#overlay .modal.show');
+  if(activeModal) activeModal.classList.remove('show');
+  /*document.querySelectorAll('#overlay > *').forEach(function (modal) {
+    modal.classList.remove('show'); 
+  });*/
   document.querySelector('#overlay').classList.add('show');
   document.querySelector(modal).classList.add('show');
 }
