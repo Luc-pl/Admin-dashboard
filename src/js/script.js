@@ -135,3 +135,12 @@ var chart = new Chart(ctx, {
     }]
   },
 });
+
+/* Pagination */
+
+// eslint-disable-next-line no-undef
+var monkeyList = new List('test-list', {
+  valueNames: ['name'],
+  page: 3,
+  pagination: true
+});
