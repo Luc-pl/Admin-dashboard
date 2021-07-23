@@ -21,6 +21,62 @@ td, th {
   }
 }
 
+.scroll-wrapper {
+  width: 100%;
+  display: block;
+  justify-content: center;
+  overflow-x: auto;
+  align-items: stretch;
+
+
+  .content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+
+    thead tr {
+      color: $background-color;
+      text-align: left;
+      font-weight: 700;
+      border-bottom: 1px solid $background-color;
+    }
+
+    th, td {
+      padding: 22px 25px;
+      text-align: center;
+    }
+
+    tbody tr {
+      border-bottom: 1px solid $background-color;
+
+      &:hover {
+        background-color: $background-color-3;
+        cursor: pointer;
+      }
+    }
+
+    td {
+      color: black;
+    }
+  }
+}
+
+.scroll-wrapper::-webkit-scrollbar {
+  display: block;
+  -webkit-appearance: none;
+  width: 7px;
+  height: 7px;
+}
+
+.scroll-wrapper::-webkit-scrollbar-thumb{
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
 @media 
   only screen and (max-width: 760px),
   (min-device-width: 768px) and (max-device-width: 1024px)  {
