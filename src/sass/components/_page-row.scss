@@ -1,0 +1,111 @@
+.page-row {
+  display: flex;
+  min-width: 85%;
+  min-height: 98%;
+  box-sizing: content-box;
+  background-color: white;
+  margin: 20px;
+  flex-direction: column;
+
+  .p-title {
+    color: black;
+  }
+
+  .page-row-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-col {
+    width: 50%;
+
+    h4 {
+      margin-bottom: 15px;
+    }
+
+    .page-box {
+      height: 200px;
+      border: 1.5px solid $background-color;
+      border-radius: 5px;
+      margin-right: 20px;
+
+      p {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+.page-row-2 {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex: 33%;
+  justify-content: space-between;
+  border-bottom: 1.5px solid $background-color;
+
+  select {
+    border: 1.5px solid $background-color;
+    border-radius: 5px;
+    width: 350px;
+    height: 40px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+  }
+}
+
+.page-row-3 {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex: 33%;
+  justify-content: space-between;
+  border-bottom: 1.5px solid $background-color;
+  padding-bottom: 40px;
+
+  span {
+    color: red;
+    font-weight: 900;    
+  }
+
+  .slidecontainer {
+    margin-top: 50px;
+  }
+}
+
+.page-line {
+    border-left: 1.5px solid $background-color;
+    height: 40%;
+    position: absolute;
+    left: 53%;
+}
+
+.checkboxes {
+    margin-top: 40px;
+    width: 550px; 
+    height: 200px; 
+    overflow-y: scroll;
+
+    .checkbox-wrap {
+        display: flex;
+        margin-left: 20px;
+    }
+
+    label {
+        font-size: 14px;
+        color: black;
+        margin-left: 20px;
+    }
+
+    input {
+       width: 20px;
+       height: 20px;
+    }
+}
+
+.button-right {
+    display: inline-block;
+    margin-top: 20px;
+    right: 0;
+}
