@@ -75,37 +75,37 @@
 }
 
 .page-line {
-    border-left: 1.5px solid $background-color;
-    height: 40%;
-    position: absolute;
-    left: 53%;
+  border-left: 1.5px solid $background-color;
+  height: 40%;
+  position: absolute;
+  left: 53%;
 }
 
 .checkboxes {
-    margin-top: 40px;
-    width: 550px; 
-    height: 200px; 
-    overflow-y: scroll;
+  margin-top: 40px;
+  width: 550px;
+  height: 200px;
+  overflow-y: scroll;
 
-    .checkbox-wrap {
-        display: flex;
-        margin-left: 20px;
-    }
+  .checkbox-wrap {
+    display: flex;
+    margin-left: 20px;
+  }
 
-    label {
-        font-size: 14px;
-        color: black;
-        margin-left: 20px;
-    }
+  label {
+    font-size: 14px;
+    color: black;
+    margin-left: 20px;
+  }
 
-    input {
-       width: 20px;
-       height: 20px;
-    }
+  input {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .button-right {
-    display: inline-block;
-    margin-top: 20px;
-    right: 0;
+  display: inline-block;
+  margin-top: 20px;
+  right: 0;
 }
