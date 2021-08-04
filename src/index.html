@@ -61,6 +61,157 @@
         <a href="#" class="btn btn-input">Send</a>
       </div>
     </div>
+
+    <div id="modal-banners" class="modal modal-banners page">
+      <div class="btn-close js--close-modal">x</div>
+      <div class="container">
+        <div class="page-title">
+          <h2>Add banners</h2>
+        </div>
+        <div class="page-row-2">
+          <div class="custom-select">
+            <h4>Scheme name</h4>
+            <input type="text" id="text" name="text">
+          </div>
+          <div class="custom-select">
+            <h4>Compain</h4>
+            <select>
+              <option value="0">Select</option>
+              <option value="1">Billboard</option>
+              <option value="2">Doublebillboard</option>
+              <option value="3">Panoram</option>
+              <option value="4">Netboard</option>
+              <option value="5">Flipbook</option>
+            </select>
+          </div>
+          <div class="custom-select">
+            <h4>Language</h4>
+            <select>
+              <option value="EN">EN</option>
+              <option value="FI">FI</option>
+              <option value="IT">IT</option>
+              <option value="PL">PL</option>
+              <option value="ES">ES</option>
+            </select>
+          </div>
+        </div>
+        <div class="page-row-2">
+          <div class="custom-select">
+            <h4>Weight-Height</h4>
+            <select>
+              <option value="0">Select</option>
+              <option value="1">750 x 100</option>
+              <option value="2">750 x 200</option>
+              <option value="3">240 x 400</option>
+              <option value="4">980 x 120</option>
+              <option value="5">930 x 180</option>
+              <option value="6">580 x 400</option>
+            </select>
+          </div>
+          <div class="custom-select">
+            <h4>Design</h4>
+            <select>
+              <option value="0">Select</option>
+              <option value="1">Example 1</option>
+              <option value="2">Example 2</option>
+              <option value="3">Example 3</option>
+              <option value="4">Example 4</option>
+            </select>
+          </div>
+          <div class="custom-select">
+            <h4>File type</h4>
+            <select>
+              <option value="0">All</option>
+              <option value="1">PSD</option>
+              <option value="2">CDR</option>
+              <option value="3">JPG</option>
+              <option value="4">PNG</option>
+            </select>
+          </div>
+        </div>
+        <div class="page-row-3">
+          <div class="page-col">
+            <h4>Select banners</h4>
+            <div class="checkboxes">
+              <div class="checkbox-wrap">
+                <input type="checkbox" id="scales" name="scales">
+                <label>Banner main</label>
+              </div>
+              <div class="checkbox-wrap">
+                <input type="checkbox" id="scales" name="scales">
+                <label>Sign up banner</label>
+              </div>
+              <div class="checkbox-wrap">
+                <input type="checkbox" id="scales" name="scales">
+                <label>Left banner</label>
+              </div>
+              <div class="checkbox-wrap">
+                <input type="checkbox" id="scales" name="scales">
+                <label>Right banner</label>
+              </div>
+              <div class="checkbox-wrap">
+                <input type="checkbox" id="scales" name="scales">
+                <label>Bottom banner</label>
+              </div>
+              <div class="checkbox-wrap">
+                <input type="checkbox" id="scales" name="scales" checked>
+                <label>Long banner</label>
+              </div>
+              <div class="checkbox-wrap">
+                <input type="checkbox" id="scales" name="scales" checked>
+                <label>Personal cabinet banner</label>
+              </div>
+              <div class="checkbox-wrap">
+                <input type="checkbox" id="scales" name="scales">
+                <label>Popup banner</label>
+              </div>
+            </div>
+          </div>
+          <div class="page-col">
+            <h4>Select websites</h4>
+            <div class="checkboxes">
+              <div class="checkbox-wrap">
+                <input type="checkbox" id="scales" name="scales">
+                <label>Landing page Money</label>
+              </div>
+              <div class="checkbox-wrap">
+                <input type="checkbox" id="scales" name="scales">
+                <label>LP Your choise</label>
+              </div>
+              <div class="checkbox-wrap">
+                <input type="checkbox" id="scales" name="scales">
+                <label>LP Wallet</label>
+              </div>
+              <div class="checkbox-wrap">
+                <input type="checkbox" id="scales" name="scales">
+                <label>E-Shop 01</label>
+              </div>
+              <div class="checkbox-wrap">
+                <input type="checkbox" id="scales" name="scales">
+                <label>Toy Store</label>
+              </div>
+              <div class="checkbox-wrap">
+                <input type="checkbox" id="scales" name="scales" checked>
+                <label>Book Store</label>
+              </div>
+              <div class="checkbox-wrap">
+                <input type="checkbox" id="scales" name="scales" checked>
+                <label>Charity</label>
+              </div>
+              <div class="checkbox-wrap">
+                <input type="checkbox" id="scales" name="scales">
+                <label>LP Icons Store</label>
+              </div>
+            </div>
+          </div>
+          <div class="button-right">
+            <a href="#create" class="btn btn-save">Save</a>
+            </div>    
+          </div>   
+        </div>
+      </div>
+    </div>    
+
   </div>
 
   <div id="overlay" class="overlay overlay-nav"></div>
@@ -464,7 +615,7 @@
         </div>
         <div class="links-wrapper">
           <div class="button-wrapper">
-            <a href="#" class="btn btn-add">+ add new</a>
+            <a data-target="#modal-banners" href="#" class="btn btn-add">+ add new</a>
           </div>
           <ul class="links-column">
             <li>
@@ -517,7 +668,7 @@
             </li>
           </ul>
           <div class="button-wrapper">
-            <a href="#" class="btn btn-add">+ add new</a>
+            <a data-target="#modal-banners" href="#" class="btn btn-add">+ add new</a>
           </div>
         </div>
       </div>

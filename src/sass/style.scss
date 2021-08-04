@@ -13,7 +13,6 @@
 @import "components/overlay";
 @import "components/chat";
 @import "components/table";
-@import "components/personal-data";
 @import "components/pagination";
 @import "components/range-slider";
 @import "components/page-row";
@@ -26,4 +25,5 @@
 
 /* Pages / Views */
 @import "pages/registration";
+@import "pages/personal-data";
 
