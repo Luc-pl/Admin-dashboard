@@ -27,12 +27,11 @@
     padding: 20px 5px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     cursor: pointer;
   
     p {
       min-width: 80px;
-      margin: 0 10px 0 0;
+      margin: 0;
       font-weight: bold;
     }
 
@@ -41,7 +40,6 @@
     }
 
     .icons-list {
-      margin-right: 40px;
       opacity: 0;
       display: inline-flex;
     }
@@ -51,7 +49,7 @@
       filter: invert(70%) sepia(71%) saturate(4103%) hue-rotate(348deg) brightness(100%) contrast(93%);
       
       [class*='icon-'] {
-        margin: 0 15px 0 5px;
+        margin: 0 5px 0 5px;
       }
     }
 
