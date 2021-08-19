@@ -137,7 +137,7 @@
   }
 }
 
-.modal-banners {
+.modal-banners, .modal-links {
   width: 80%;
   height: 170%;
   
@@ -162,6 +162,12 @@
     color: $background-color;
   }
   
+}
+
+.checkboxes-col {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @media(max-width: 768px) {
