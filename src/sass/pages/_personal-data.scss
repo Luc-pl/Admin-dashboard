@@ -67,7 +67,7 @@ input {
 }
 
 @media (max-width: 768px) {
-  .personal-form{
+  .personal-form {
     min-width: 65%;
   }
 }
@@ -75,5 +75,16 @@ input {
 @media (min-width: 769px) and (max-width: 991px) {
   .personal-form {
     min-width: 70%;
+  }
+
+  .form-example {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    font-size: 8px;
+    margin-left: 20px;
+    font-weight: bold;
   }
 }
