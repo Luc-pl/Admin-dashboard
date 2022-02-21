@@ -104,7 +104,7 @@ for (let link of links) {
 var ctx = document.getElementById('myChart').getContext('2d');
 
 // eslint-disable-next-line no-undef
-var chart = new chart(ctx, {
+var chart = new Chart(ctx, {
   // 1
   type: 'bar',
   data: {
